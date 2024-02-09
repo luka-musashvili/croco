@@ -1,0 +1,48 @@
+{
+	"name": "croco",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"nodemonConfig": {
+		"watch": [
+			"src"
+		],
+		"ext": "ts",
+		"exec": "ts-node ./src/index.ts"
+	},
+	"scripts": {
+		"dev": "ts-node src/index.ts",
+		"start": "node src/index.js",
+		"build": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"dotenv": "^16.4.1",
+		"fast-levenshtein": "^3.0.0",
+		"jsonwebtoken": "^9.0.2",
+		"koa": "^2.15.0",
+		"koa-bodyparser": "^4.4.1",
+		"koa-router": "^12.0.1",
+		"koa2-swagger-ui": "^5.10.0",
+		"swagger-jsdoc": "^6.2.8",
+		"typeorm": "^0.3.20"
+	},
+	"devDependencies": {
+		"@koa/cors": "^5.0.0",
+		"@types/bcrypt": "^5.0.2",
+		"@types/fast-levenshtein": "^0.0.4",
+		"@types/jsonwebtoken": "^9.0.5",
+		"@types/koa": "^2.14.0",
+		"@types/koa__cors": "^5.0.0",
+		"@types/koa-bodyparser": "^4.3.12",
+		"@types/koa-router": "^7.4.8",
+		"@types/node": "^20.11.16",
+		"@types/swagger-jsdoc": "^6.0.4",
+		"nodemon": "^3.0.3",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
+	}
+}
